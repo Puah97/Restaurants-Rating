@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.Master.cs" Inherits="Finiteloop.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel ="stylesheet" />
+    <title></title>
+
+
+</head>
+<body >
+    <script type="text/javascript">
+
+//        window.onload = function () {
+
+//            if (document.addEventListener) {
+//                document.getElementById('$HyperLink1').hidden = true;
+
+//            }
+//            else {
+//                document.getElementById('logout').attachEvent('click', clickhandler)
+//            }
+//        };
+//        function clickhandler() {
+
+
+//        }
+
+   
+
+       
+
+    </script>
+        <form id="form1" runat="server">
+<div class="container">
+    <div class="jumbotron">
+        <div class="navbar navbar-default" >
+            
+            <a class="pull-left" href="#"><asp:Image ID="Image1" runat="server"  Width="100px" Height="60px" ImageUrl="~/Images/food.JPG" /></a>
+
+                <ul class="nav navbar-nav">
+                    <li>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                                        <li>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Customer/viewAdverts.aspx" 
+                                                Visible="False">View Adverts</asp:HyperLink></li>
+                                        <li>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Customer/ViewReview.aspx" 
+                                                Visible="False">View Review</asp:HyperLink></li>
+                     <li>
+                        <asp:HyperLink ID="HyperLink4" runat="server" 
+                             NavigateUrl="~/Customer/writeReview.aspx" Visible="False">Rate Resturant</asp:HyperLink></li> 
+                             <li>
+                        <asp:HyperLink ID="HyperLink7" runat="server" 
+                            NavigateUrl="~/Manager/Advertisement.aspx" Visible="False">Post Adverts</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink5" runat="server" 
+                            NavigateUrl="~/Manager/UpdateAvertisement.aspx" Visible="False">Update Adverts</asp:HyperLink></li>
+                            <li>
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Reports.aspx" 
+                             Visible="False">View Reports</asp:HyperLink></li>
+                    
+                    <li>
+                        <asp:HyperLink ID="HyperLink8" runat="server" 
+                            NavigateUrl="~/Manager/AddRest.aspx" Visible="False">Add Restuarent</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink9" runat="server" 
+                            NavigateUrl="~/Manager/DeleteAdvert.aspx" Visible="False">Remove Advert</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink10" runat="server" 
+                            NavigateUrl="~/Manager/BackTalk.aspx" Visible="False">Back Talk Portal</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink12" runat="server" Visible="False">View Response</asp:HyperLink></li>
+                        <li>
+                        <asp:HyperLink ID="HyperLink13" runat="server" Visible="True" 
+                                NavigateUrl="~/Bonus/Bprogram.aspx">More Fun</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink></li>
+                     
+
+
+               
+                  
+
+                </ul>
+          <%--<img src="images/emptypp.JPG" width="60px" height="60px" />--%>
+                 <a class="pull-right" href="#"><asp:Image ID="pimage" runat="server" Width="60px" Height="60px" ImageUrl="~/Images/emptypp.jpg" DescriptionUrl="~/Customer/UserProfile.aspx"/></a>
+                 <a class="pull-right" href="#">&nbsp</a>
+               <a class="pull-right" href="#"><br /><asp:Button ID="Button2" runat="server" CssClass="btn-link" Text="Logout" OnClick="Button2_Click" /></a><br />
+                  <a class="pull-right" href="#"><asp:Button ID="Button3" runat="server" 
+                CssClass="btn-link" Text="Logout" onclick="Button3_Click1"  /></a>&nbsp&nbsp
+            <%--<input id="logout" type="button" onclick="clickhandler()" class="btn btn-default" value="Logout">
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="60px" ImageUrl="~/Images/emptypp.jpg" OnClick="ImageButton1_Click" Width="60px" />--%>
+                  
+               
+
+        
+    </div>
+            </div>
+    <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server">Search Restaurant</asp:TextBox><br />
+    <%-- <input id="searchbox" type="text" class="form-control" placeholder="Search Resturant" /><br /> --%>
+
+      <div class="col-lg-7 col-lg-offset-5">
+     <asp:Button ID="Button1" CssClass="btn btn-default" runat="server" Text="Search" OnClick="Button1_Click" />
+          
+         </div >
+                      <%--<div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search" />
+                          <button id="searchbtn" type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search"></span></button>
+                      </div>--%>
+                      
+                    
+</div>     
+
+
+
+
+        <div class="col-lg-7 col-lg-offset-3"><br />
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" >
+                        <asp:Panel ID="Panel2" runat="server">
+                            
+                            
+                        </asp:Panel>
+                    </asp:ContentPlaceHolder>
+
+              </div><br /><br /><br /><br />
+            <div class="container">
+    <footer id="foterimg" class="navbar navbar-default navbar-fixed-bottom" >
+        <div class="container">
+    <div class="row">
+                <div class="col-lg-6">
+                                
+                   <h4 style="font-family: Sans-Serif">Copyright &copy 2017 Finiteloop Inc. Finiteloop 
+                    and related marks are registered trademarks of Finiteloop.</h4>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+                </div>
+                 
+
+    </form>
+    </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+       
+</body>
+</html>
